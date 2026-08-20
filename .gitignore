@@ -1,0 +1,15 @@
+.venv/
+.venv-quality/
+__pycache__/
+*.py[cod]
+frontend/node_modules/
+frontend/dist/
+models/
+data/
+third_party/
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+logs/*
+!logs/.gitkeep

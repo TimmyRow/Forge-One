@@ -1,0 +1,15 @@
+# CUDA PyTorch 2.5.1 is installed separately from the official CUDA wheel index.
+numpy==1.26.4
+Pillow==10.4.0
+diffusers==0.30.3
+transformers==4.35.2
+huggingface-hub==0.26.5
+einops==0.7.0
+omegaconf==2.3.0
+trimesh==4.7.4
+scikit-image==0.25.2
+scipy==1.13.1
+opencv-python-headless==4.10.0.84
+peft==0.13.2
+jaxtyping==0.2.34
+typeguard==2.13.3
