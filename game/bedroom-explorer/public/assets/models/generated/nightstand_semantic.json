@@ -1,0 +1,17 @@
+{
+  "kind": "nightstand",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\5ef6c72f74d941f6aca2c14adf617e7d\\review-decimation-5pct\\nightstand_5pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\nightstand_semantic.glb",
+  "triangles_before": 85870,
+  "triangles_after_reload": 85870,
+  "material_faces": {
+    "walnut": 76710,
+    "brass_knobs": 9160
+  },
+  "materials_after_reload": [
+    "Nightstand_Brass_Knobs.001",
+    "Nightstand_Walnut.001"
+  ],
+  "file_size": 1058324,
+  "valid_reload": true
+}

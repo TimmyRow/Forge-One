@@ -1,0 +1,17 @@
+{
+  "kind": "chair",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\853c67aaed0f4c5385871b1e3346608e\\game-ready\\original-low\\model_game_ready.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\chair_semantic.glb",
+  "triangles_before": 31886,
+  "triangles_after_reload": 31886,
+  "material_faces": {
+    "navy_upholstery": 24095,
+    "walnut_legs": 7791
+  },
+  "materials_after_reload": [
+    "Chair_Navy_Upholstery.001",
+    "Chair_Walnut_Legs.001"
+  ],
+  "file_size": 393668,
+  "valid_reload": true
+}

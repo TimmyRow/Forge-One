@@ -1,0 +1,18 @@
+{
+  "kind": "lamp",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\25f1e83c4d864f16a3dc5b4eadf6b2ad\\review-decimation-3pct\\lamp_3pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\lamp_semantic.glb",
+  "triangles_before": 44278,
+  "triangles_after_reload": 44278,
+  "material_faces": {
+    "warm_cream_shade": 27593,
+    "antique_brass_stem_base": 16685
+  },
+  "materials_after_reload": [
+    "Lamp_Antique_Brass_Base.001",
+    "Lamp_Warm_Cream_Shade.001"
+  ],
+  "vertex_color_attributes_after_reload": [],
+  "file_size": 669244,
+  "valid_reload": true
+}

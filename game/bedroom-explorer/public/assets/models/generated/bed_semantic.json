@@ -1,0 +1,19 @@
+{
+  "kind": "bed",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\4446f1f491934853b988e99efed874f0\\review-decimation-5pct\\bed_5pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\bed_semantic.glb",
+  "triangles_before": 113592,
+  "triangles_after_reload": 113592,
+  "material_faces": {
+    "walnut_frame": 21594,
+    "navy_headboard": 46886,
+    "cream_bedding": 45112
+  },
+  "materials_after_reload": [
+    "Bed_Cream_Bedding.001",
+    "Bed_Navy_Padded_Headboard.001",
+    "Bed_Walnut_Frame.001"
+  ],
+  "file_size": 1517628,
+  "valid_reload": true
+}

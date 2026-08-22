@@ -1,0 +1,41 @@
+{
+  "kind": "door",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\75001e02e4d8467197f2861caec447ab\\review-decimation-2pct\\door_2pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\door_semantic.glb",
+  "triangles_before": 14446,
+  "triangles_after_reload": 14446,
+  "material_faces": {
+    "walnut_slab": 13457,
+    "antique_brass_lever": 989
+  },
+  "materials_after_reload": [
+    "Door_Antique_Brass_Lever.001",
+    "Door_Walnut.001"
+  ],
+  "vertex_color_attributes_after_reload": [],
+  "file_size": 202164,
+  "valid_reload": true,
+  "normalization": {
+    "target_height": 2.05,
+    "uniform_scale": 1.0767661312550867,
+    "bounds_min": [
+      -0.4708005487918854,
+      -0.17105230689048767,
+      0.0
+    ],
+    "bounds_max": [
+      0.4708005487918854,
+      0.17105230689048767,
+      2.049999952316284
+    ],
+    "dimensions": [
+      0.9416010975837708,
+      0.34210461378097534,
+      2.049999952316284
+    ],
+    "pivot": "bottom-center",
+    "handle_side": "local X minimum",
+    "hinge_edge": "local X maximum",
+    "hinge_x": 0.4708005487918854
+  }
+}

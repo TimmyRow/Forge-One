@@ -1,0 +1,17 @@
+{
+  "kind": "wardrobe",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\0c268eb2b46d409891d0d590f2b92681\\review-decimation-4pct\\wardrobe_4pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\wardrobe_semantic.glb",
+  "triangles_before": 64142,
+  "triangles_after_reload": 64142,
+  "material_faces": {
+    "walnut": 63277,
+    "brass_handles": 865
+  },
+  "materials_after_reload": [
+    "Wardrobe_Brass_Handles.001",
+    "Wardrobe_Walnut.001"
+  ],
+  "file_size": 796916,
+  "valid_reload": true
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "rug_runtime_normalization",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\rug_semantic_pre_normalized.glb",
+  "archive": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\rug_semantic_pre_normalized.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\rug_semantic.glb",
+  "triangles_before": 42616,
+  "triangles_after_reload": 42616,
+  "materials_before": [
+    "Rug_Cream_Border",
+    "Rug_Navy_Field"
+  ],
+  "materials_after_reload": [
+    "Rug_Cream_Border.001",
+    "Rug_Navy_Field.001"
+  ],
+  "visible_face_upward_area_ratio": 0.9950575281028092,
+  "bounds_min": [
+    -0.999359667301178,
+    -0.7575136423110962,
+    0.0
+  ],
+  "bounds_max": [
+    0.999359667301178,
+    0.7574772834777832,
+    0.17020484805107117
+  ],
+  "game_space_dimensions": {
+    "x_width": 1.998719334602356,
+    "y_depth": 1.5149909257888794,
+    "z_height": 0.17020484805107117
+  },
+  "bottom_center_pivot_error": [
+    0.0,
+    -1.817941665649414e-05,
+    0.0
+  ],
+  "file_size": 543336,
+  "valid_reload": true
+}

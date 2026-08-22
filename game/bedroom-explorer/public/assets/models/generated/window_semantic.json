@@ -1,0 +1,42 @@
+{
+  "kind": "window",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\96595de657764247b0331a21c45de7e9\\review-decimation-4pct\\window_4pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\window_semantic.glb",
+  "triangles_before": 61076,
+  "triangles_after_reload": 61076,
+  "material_faces": {
+    "walnut_frame_rod": 27252,
+    "navy_curtains": 33824,
+    "pane_geometry": 0
+  },
+  "materials_after_reload": [
+    "Window_Navy_Curtains.001",
+    "Window_Walnut_Frame_Rod.001"
+  ],
+  "vertex_color_attributes_after_reload": [],
+  "file_size": 832712,
+  "valid_reload": true,
+  "normalization": {
+    "target_height": 1.45,
+    "uniform_scale": 0.7653762358294908,
+    "bounds_min": [
+      -0.7276203632354736,
+      -0.24507169425487518,
+      0.0
+    ],
+    "bounds_max": [
+      0.7276203632354736,
+      0.24507169425487518,
+      1.4500000476837158
+    ],
+    "dimensions": [
+      1.4552407264709473,
+      0.49014338850975037,
+      1.4500000476837158
+    ],
+    "pivot": "bottom-center",
+    "front_direction": "local -Y (curtains project into room)",
+    "rear_direction": "local +Y (faces wall)",
+    "pane_treatment": "open; no safely isolated pane geometry existed"
+  }
+}

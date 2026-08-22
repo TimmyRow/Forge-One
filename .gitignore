@@ -19,6 +19,9 @@ game/**/dist/
 models/
 !game/**/public/assets/models/
 !game/**/public/assets/models/**
+game/**/public/assets/models/generated/*_review/
+game/**/public/assets/models/generated/*_pre_normalized.glb
+game/**/public/assets/models/generated/*_pre_normalized.json
 data/
 third_party/
 uploads/*

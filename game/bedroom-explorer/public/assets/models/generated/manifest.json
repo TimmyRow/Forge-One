@@ -1,0 +1,18 @@
+{
+  "pipeline": "Forge One local image-to-3D",
+  "policy": "Only critic-approved generated assets replace authored fallbacks.",
+  "assets": [
+    { "name": "bed", "jobId": "4446f1f491934853b988e99efed874f0", "mode": "quality", "triangles": 113592, "file": "bed_semantic.glb" },
+    { "name": "nightstand", "jobId": "5ef6c72f74d941f6aca2c14adf617e7d", "mode": "quality", "triangles": 85870, "file": "nightstand_semantic.glb", "instances": 2 },
+    { "name": "wardrobe", "jobId": "0c268eb2b46d409891d0d590f2b92681", "mode": "quality", "triangles": 64142, "file": "wardrobe_semantic.glb" },
+    { "name": "desk", "jobId": "ae641dd96b0a433cb9ea03991edd67e7", "mode": "fast", "triangles": 29362, "file": "desk_semantic.glb" },
+    { "name": "chair", "jobId": "853c67aaed0f4c5385871b1e3346608e", "mode": "fast", "triangles": 31886, "file": "chair_semantic.glb" },
+    { "name": "rug", "jobId": "3da19606ec334ad7a0a27a8a19aa81ee", "mode": "fast", "triangles": 42616, "file": "rug_semantic.glb" },
+    { "name": "lamp", "jobId": "25f1e83c4d864f16a3dc5b4eadf6b2ad", "mode": "quality", "triangles": 44278, "file": "lamp_semantic.glb" },
+    { "name": "window", "jobId": "96595de657764247b0331a21c45de7e9", "mode": "quality", "triangles": 61076, "file": "window_semantic.glb" },
+    { "name": "key", "jobId": "22b8f23d6b884421a9a6c411fb7c8a29", "mode": "fast", "triangles": 7704, "file": "key_semantic.glb", "interactable": true },
+    { "name": "photo frame", "jobId": "a209d46c19374cd6b1586f4838cbf3c8", "mode": "quality", "triangles": 42976, "file": "frame_semantic.glb", "interactable": true },
+    { "name": "journal", "jobId": "e7b2be0585ec4a6b80592cfa1f6a5b9f", "mode": "fast", "triangles": 49600, "file": "journal_semantic.glb", "interactable": true },
+    { "name": "door", "jobId": "75001e02e4d8467197f2861caec447ab", "mode": "quality", "triangles": 14446, "file": "door_semantic.glb", "interactable": true, "pivot": "right hinge" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "frame",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\a209d46c19374cd6b1586f4838cbf3c8\\review-decimation-3pct\\frame_3pct.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\frame_semantic.glb",
+  "triangles_before": 42976,
+  "triangles_after_reload": 42976,
+  "material_faces": {
+    "dark_walnut_frame_stand": 36155,
+    "cream_inset_panel": 6821
+  },
+  "materials_after_reload": [
+    "Frame_Cream_Photo_Panel.001",
+    "Frame_Dark_Walnut.001"
+  ],
+  "vertex_color_attributes_after_reload": [],
+  "file_size": 607860,
+  "valid_reload": true,
+  "normalization": {
+    "target_height": 0.28,
+    "uniform_scale": 0.14710267857478368,
+    "bounds_min": [
+      -0.10083623230457306,
+      -0.08142098784446716,
+      0.0
+    ],
+    "bounds_max": [
+      0.10083623230457306,
+      0.08142098784446716,
+      0.2800000011920929
+    ],
+    "dimensions": [
+      0.20167246460914612,
+      0.16284197568893433,
+      0.2800000011920929
+    ],
+    "pivot": "bottom-center",
+    "placement": "tabletop"
+  }
+}

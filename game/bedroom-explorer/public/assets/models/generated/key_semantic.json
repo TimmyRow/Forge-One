@@ -1,0 +1,15 @@
+{
+  "kind": "key",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\22b8f23d6b884421a9a6c411fb7c8a29\\game-ready\\original-low\\model_game_ready.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\key_semantic.glb",
+  "triangles_before": 7704,
+  "triangles_after_reload": 7704,
+  "material_faces": {
+    "brass": 7704
+  },
+  "materials_after_reload": [
+    "Key_Antique_Brass.001"
+  ],
+  "file_size": 93476,
+  "valid_reload": true
+}

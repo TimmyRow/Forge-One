@@ -1,0 +1,15 @@
+{
+  "kind": "desk",
+  "input": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\outputs\\ae641dd96b0a433cb9ea03991edd67e7\\game-ready\\original-low\\model_game_ready.glb",
+  "output": "C:\\Users\\jcrow\\Downloads\\AI\\Codex\\Tools\\image-to-3d-studio\\game\\bedroom-explorer\\public\\assets\\models\\generated\\desk_semantic.glb",
+  "triangles_before": 29362,
+  "triangles_after_reload": 29362,
+  "material_faces": {
+    "walnut": 29362
+  },
+  "materials_after_reload": [
+    "Desk_Walnut.001"
+  ],
+  "file_size": 341772,
+  "valid_reload": true
+}
