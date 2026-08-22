@@ -39,6 +39,10 @@ Before publishing the code or sharing a tunnel, follow [PUBLIC_RELEASE.md](PUBLI
 
 Set `FAST_CHUNK_SIZE` or `FAST_MC_RESOLUTION` before `run.bat` only for diagnostics. The tested defaults prioritize successful 8 GB generation.
 
+## Room One game prototype
+
+Forge One includes a small first-person bedroom exploration game under `game/bedroom-explorer`. Build it with `npm install` and `npm run build` from that directory; Forge One then serves it at `/games/room-one/` and exposes it through the **Play** item in the main navigation. The editable room source, GLB, FBX, validation report, and repeatable Blender build script are included with the game.
+
 ## Licenses
 
 The official TripoSR source and MIT license are preserved in `third_party/TripoSR/`. Dependency notices are summarized in `THIRD_PARTY_LICENSES.md`.

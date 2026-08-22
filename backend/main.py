@@ -38,6 +38,7 @@ OUTPUTS = ROOT / "outputs"
 LOGS = ROOT / "logs"
 DATA = ROOT / "data"
 FRONTEND = ROOT / "frontend" / "dist"
+ROOM_ONE_FRONTEND = ROOT / "game" / "bedroom-explorer" / "dist"
 BLENDER = Path(r"C:\Program Files\Blender Foundation\Blender 4.2\blender.exe")
 MAX_UPLOAD_BYTES = 25 * 1024 * 1024
 ALLOWED_FORMATS = {"PNG": ".png", "JPEG": ".jpg", "WEBP": ".webp"}
@@ -1700,6 +1701,9 @@ def prepared_image(job_id: str) -> FileResponse:
     _job, path = generation_file(job_id, "prepared-input.png")
     return FileResponse(path, media_type="image/png")
 
+
+if ROOM_ONE_FRONTEND.is_dir():
+    app.mount("/games/room-one", StaticFiles(directory=ROOM_ONE_FRONTEND, html=True), name="room-one-game")
 
 if FRONTEND.is_dir():
     app.mount("/", StaticFiles(directory=FRONTEND, html=True), name="frontend")

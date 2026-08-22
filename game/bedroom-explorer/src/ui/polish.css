@@ -1,0 +1,32 @@
+.reticle {
+  opacity: 0.32;
+  transition: opacity 160ms ease, transform 160ms ease, border-color 160ms ease;
+}
+
+.reticle.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.35);
+  border-color: var(--gold);
+  box-shadow: 0 0 14px rgb(255 204 112 / 35%);
+}
+
+.controls {
+  transition: opacity 800ms ease;
+}
+
+.controls.hidden-hint {
+  opacity: 0;
+}
+
+.pause-help {
+  color: var(--mist);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: -0.35rem 0 1.1rem;
+}
+
+@media (max-width: 720px) {
+  .pause-help {
+    font-size: 0.78rem;
+  }
+}

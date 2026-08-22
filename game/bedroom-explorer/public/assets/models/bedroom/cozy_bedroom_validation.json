@@ -1,0 +1,63 @@
+{
+  "glb": {
+    "label": "GLB reload",
+    "mesh_objects": 122,
+    "empty_objects": 11,
+    "materials": 16,
+    "triangles": 13788,
+    "invalid_meshes": [],
+    "degenerate_faces": 0,
+    "colliders": [
+      "COLLIDER_Bed",
+      "COLLIDER_Chair",
+      "COLLIDER_Desk",
+      "COLLIDER_Floor",
+      "COLLIDER_NightstandLeft",
+      "COLLIDER_NightstandRight",
+      "COLLIDER_WallBack",
+      "COLLIDER_WallLeft",
+      "COLLIDER_WallRight",
+      "COLLIDER_Wardrobe"
+    ],
+    "interactables": [
+      "PROP_Journal_Decor",
+      "PROP_Key_Decor",
+      "PROP_PhotoFrame_Decor"
+    ],
+    "required_nodes_present": true
+  },
+  "fbx": {
+    "label": "FBX reload",
+    "mesh_objects": 122,
+    "empty_objects": 11,
+    "materials": 16,
+    "triangles": 13788,
+    "invalid_meshes": [],
+    "degenerate_faces": 0,
+    "colliders": [
+      "COLLIDER_Bed",
+      "COLLIDER_Chair",
+      "COLLIDER_Desk",
+      "COLLIDER_Floor",
+      "COLLIDER_NightstandLeft",
+      "COLLIDER_NightstandRight",
+      "COLLIDER_WallBack",
+      "COLLIDER_WallLeft",
+      "COLLIDER_WallRight",
+      "COLLIDER_Wardrobe"
+    ],
+    "interactables": [
+      "PROP_Journal_Decor",
+      "PROP_Key_Decor",
+      "PROP_PhotoFrame_Decor"
+    ],
+    "required_nodes_present": true
+  },
+  "file_sizes_bytes": {
+    "blend": 2466696,
+    "glb": 455556,
+    "fbx": 589036,
+    "preview": 1174708
+  },
+  "passed": true
+}

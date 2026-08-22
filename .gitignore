@@ -14,7 +14,11 @@ __pycache__/
 *.py[cod]
 frontend/node_modules/
 frontend/dist/
+game/**/node_modules/
+game/**/dist/
 models/
+!game/**/public/assets/models/
+!game/**/public/assets/models/**
 data/
 third_party/
 uploads/*

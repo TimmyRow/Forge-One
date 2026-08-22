@@ -1,0 +1,34 @@
+{
+  "name": "Forge One Cozy Bedroom",
+  "scale_meters": [
+    9.0,
+    8.0,
+    3.2
+  ],
+  "triangles_in_blend": 13788,
+  "mesh_objects": 122,
+  "materials": 17,
+  "colliders": [
+    "COLLIDER_Bed",
+    "COLLIDER_Chair",
+    "COLLIDER_Desk",
+    "COLLIDER_Floor",
+    "COLLIDER_NightstandLeft",
+    "COLLIDER_NightstandRight",
+    "COLLIDER_WallBack",
+    "COLLIDER_WallLeft",
+    "COLLIDER_WallRight",
+    "COLLIDER_Wardrobe"
+  ],
+  "interactables": [
+    "PROP_Journal_Decor",
+    "PROP_Key_Decor",
+    "PROP_PhotoFrame_Decor"
+  ],
+  "files": {
+    "blend": "cozy_bedroom.blend",
+    "glb": "cozy_bedroom.glb",
+    "fbx": "cozy_bedroom.fbx",
+    "preview": "cozy_bedroom_preview.png"
+  }
+}
