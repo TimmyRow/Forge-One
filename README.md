@@ -22,7 +22,11 @@ Use **Create profile** in the top bar, then create a name and password. Models g
 
 ## Temporary public link
 
+Current development demo: <https://hitachi-manor-breakdown-cafe.trycloudflare.com/>
+
 This PC can expose the app through a Cloudflare Quick Tunnel while the backend and `cloudflared` processes are running. It is intentionally unrestricted when shared publicly, so do not expose images or outputs you would not want other visitors to access. A Quick Tunnel URL changes after restart; check `logs/public-tunnel.out.log` for the current address.
+
+Before publishing the code or sharing a tunnel, follow [PUBLIC_RELEASE.md](PUBLIC_RELEASE.md). In particular, use `FORGE_ACCESS_TOKEN` for a personal tunnel and `FORGE_PUBLIC_MODE=1` to enable public workload guardrails. A `trycloudflare.com` address is temporary and is not a permanent project homepage.
 
 ## Reliability choices for 8 GB VRAM
 

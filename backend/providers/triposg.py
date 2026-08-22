@@ -41,6 +41,9 @@ class TripoSGProvider:
         progress: Callable[[str, int], None],
         cancelled: Callable[[], bool],
         variation: int = 0,
+        detail: str = "Balanced",
+        trim: str = "Balanced",
+        subject_mode: str = "General",
     ) -> QualityGenerationResult:
         if not self.is_installed():
             raise RuntimeError("Quality mode is not installed yet. Run setup-quality.bat once, then retry.")
@@ -50,6 +53,8 @@ class TripoSGProvider:
             str(QUALITY_PYTHON), str(PROJECT_ROOT / "scripts" / "run_quality.py"),
             "--image", str(source), "--output-dir", str(output_dir),
             "--seed", str(42 + variation),
+            "--detail", detail, "--trim", trim,
+            "--subject-mode", subject_mode,
         ]
         env = os.environ.copy()
         env["PYTHONUTF8"] = "1"

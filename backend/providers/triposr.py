@@ -114,7 +114,10 @@ class TripoSRProvider:
         # Give the reconstruction network more pixels of the actual object
         # rather than background/padding.  A small margin still protects the
         # silhouette from clipping.
-        framing = (0.90, 0.92, 0.88, 0.94)[variation % 4]
+        # Keep remake framing close to the proven default. Large crop shifts
+        # changed the inferred silhouette too much and often made a candidate
+        # visibly worse than the original.
+        framing = (0.90, 0.91, 0.89)[variation % 3]
         cutout = resize_foreground(cutout, framing)
         cutout.save(destination, format="PNG")
 
@@ -143,20 +146,22 @@ class TripoSRProvider:
         return mesh
 
     @staticmethod
-    def _refine_surface(mesh: trimesh.Trimesh) -> trimesh.Trimesh:
+    def _refine_surface(mesh: trimesh.Trimesh, detail: str = "Balanced") -> trimesh.Trimesh:
         """Subtly remove marching-cubes stair steps without erasing features."""
-        trimesh.smoothing.filter_taubin(mesh, lamb=0.35, nu=0.40, iterations=2)
+        iterations = {"Soft": 4, "Balanced": 2, "Sharp": 1}.get(detail, 2)
+        trimesh.smoothing.filter_taubin(mesh, lamb=0.35, nu=0.40, iterations=iterations)
         trimesh.repair.fix_normals(mesh, multibody=True)
         return mesh
 
     @staticmethod
-    def _remove_floating_clumps(mesh: trimesh.Trimesh) -> trimesh.Trimesh:
+    def _remove_floating_clumps(mesh: trimesh.Trimesh, trim: str = "Balanced") -> trimesh.Trimesh:
         """Discard only tiny disconnected marching-cubes artifacts."""
         pieces = list(mesh.split(only_watertight=False))
         if len(pieces) < 2:
             return mesh
         largest_area = max(float(piece.area) for piece in pieces)
-        face_floor = max(80, int(len(mesh.faces) * 0.002))
+        trim_ratio = {"Gentle": 0.001, "Balanced": 0.002, "Clean": 0.004}.get(trim, 0.002)
+        face_floor = max(80, int(len(mesh.faces) * trim_ratio))
         keep = [piece for piece in pieces if len(piece.faces) >= face_floor and piece.area >= largest_area * 0.01]
         result = trimesh.util.concatenate(keep or [max(pieces, key=lambda piece: piece.area)])
         result.remove_unreferenced_vertices()
@@ -188,6 +193,9 @@ class TripoSRProvider:
         progress: Callable[[str, int], None],
         cancelled: Callable[[], bool],
         variation: int = 0,
+        detail: str = "Balanced",
+        trim: str = "Balanced",
+        subject_mode: str = "General",
     ) -> FastGenerationResult:
         started = time.perf_counter()
         self.assert_cuda()
@@ -225,7 +233,7 @@ class TripoSRProvider:
                     resolution=self._mc_resolution,
                     # Alternate reconstructions sample a nearby isosurface and
                     # framing rather than returning a byte-for-byte rerun.
-                    threshold=(25.0, 24.0, 26.0, 24.6)[variation % 4],
+                    threshold=(25.0, 25.0, 24.8)[variation % 3],
                 )
             peak_vram = torch.cuda.max_memory_allocated(self._device)
             del scene_codes
@@ -240,8 +248,13 @@ class TripoSRProvider:
         self._check_cancel(cancelled)
         progress("Validating and packaging the generated mesh as GLB…", 90)
         mesh = self._remove_floating_clumps(
-            self._refine_surface(self._normalize_and_validate_mesh(meshes[0]))
+            self._refine_surface(self._normalize_and_validate_mesh(meshes[0]), detail), trim
         )
+        # The Create stage is geometry-only. A separate reversible Color pass
+        # applies source colours later without forcing reconstruction and
+        # texture projection to compete in one inference step.
+        neutral = np.tile(np.array([184, 188, 194, 255], dtype=np.uint8), (len(mesh.vertices), 1))
+        mesh.visual = trimesh.visual.ColorVisuals(mesh=mesh, vertex_colors=neutral)
         del meshes
         exported = trimesh.Scene(mesh).export(file_type="glb")
         glb_path.write_bytes(exported)

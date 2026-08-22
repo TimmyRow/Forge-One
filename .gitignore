@@ -1,5 +1,15 @@
 .venv/
 .venv-quality/
+.venv-hunyuan/
+.env
+.env.*
+!.env.example
+*.sqlite3
+*.db
+*.pem
+*.key
+cloudflared*.log
+logs/public-tunnel*.log
 __pycache__/
 *.py[cod]
 frontend/node_modules/
